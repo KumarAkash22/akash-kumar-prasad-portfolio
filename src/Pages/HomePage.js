@@ -12,7 +12,7 @@ function HomePage() {
                 <Particle />
             </div>
             <div className="typography">
-                <h1>Hi, I'm <span>Akash Kumar Prasad</span></h1>
+                <h1>Hi, I'm <span>Akash Kumar</span></h1>
                 <h4>
                     A Versatile Full Stack Web Developer.
                 </h4>
