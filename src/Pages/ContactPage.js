@@ -21,7 +21,7 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  className="form">
+                    <form  className="form" action="https://formsubmit.co/akash22gupta33@gmail.com" method="POST">
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
                             <input type="text" id="name" />
@@ -38,7 +38,7 @@ function ContactPage() {
                             <label htmlFor="text-area">Enter your Message*</label>
                             <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                         </div>
-                        <div className="form-field f-button">
+                        <div className="form-field f-button" type="submit">
                             <PrimaryButton title={'Send Email'} />
                         </div>
                     </form>
@@ -46,7 +46,7 @@ function ContactPage() {
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'8107715717'} />
                     <ContactItem title={'Email'} icon={email} cont1={'akash22gupta33@gmail.com'} cont2={'akashkumarprasad@gmail.com'} />
-                    <ContactItem title={'Address'} icon={location} cont1={'27 Aldrich Road, London, England'} cont2={'United Kingdom'} />
+                    <ContactItem title={'Address'} icon={location} cont1={'22, Shanti Nagar, Beawar,Rajasthan'} cont2= {'India'}/>
                     
                 </div>
             </InnerLayout>

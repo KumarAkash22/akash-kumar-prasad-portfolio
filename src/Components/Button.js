@@ -14,7 +14,6 @@ function Button({filter, button}) {
         </ButtonsStyled>
     )
 }
-
 const ButtonStyled = styled.button`
     outline: none;
     border: none;

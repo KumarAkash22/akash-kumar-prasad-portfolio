@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import ak from '../img/ak.jpg';
+import ak from '../img/ak.jpeg';
 import PrimaryButton from './PrimaryButton';
-
+import Typical from 'react-typical';
 
 function ImageSection() {
     return (
@@ -11,7 +11,16 @@ function ImageSection() {
                 <img src={ak} alt=""/>
             </div>
             <div className="right-content">
-                <h4>I am <span>Akash Kumar Prasad</span></h4>
+                <h4>I am <span><Typical
+                    loop={Infinity}
+                    wrapper="span"
+                    steps={[
+                        " Akash Kumar Prasad", 
+                        1000,
+                        "web Developer",
+                        1000,
+                    ]}
+                    /></span></h4>
                 <p className="paragraph">
                 Versatile Full Stack Web Developer possessing comprehensiveknowledge in JavaScript
                  algorithms, having basic skills of JavaScript, HTML,CSS with the ability of quickly 

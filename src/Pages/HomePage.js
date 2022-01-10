@@ -4,15 +4,32 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
 import YoutubeIcon from '@material-ui/icons/YouTube';
 import Particle from '../Components/Particle';
+import Typical from 'react-typical';
 
 function HomePage() {
+
+
     return (
         <HomePageStyled>
             <div className="particle-con">
                 <Particle />
             </div>
             <div className="typography">
-                <h1>Hi, I'm <span>Akash Kumar</span></h1>
+                <h1>Hi, I'm 
+                   <span> 
+                    <Typical
+                    loop={Infinity}
+                    wrapper="span"
+                    steps={[
+                        " Akash Kumar Prasad", 
+                        1000,
+                        "web Developer",
+                        1000,
+                    ]}
+                    />
+                    </span>
+</h1>
+                
                 <h4>
                     A Versatile Full Stack Web Developer.
                 </h4>
@@ -36,7 +53,11 @@ const HomePageStyled = styled.header`
     width: 100%;
     height: 100vh;
     position: relative;
-   
+    
+    p{
+        color: blueviolet;
+        font-size: 50px;
+    }
     .typography{
         position: absolute;
         top: 50%;
