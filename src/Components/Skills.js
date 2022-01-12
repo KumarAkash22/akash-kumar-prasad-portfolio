@@ -2,7 +2,19 @@ import React from 'react'
 import styled from 'styled-components';
 import {InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import ProgressBar from './ProgressBar';
+// import ProgressBar from './ProgressBar';
+import html_img from '../img/portImages/html_img.png'
+import css_img from '../img/portImages/css_img.jpg'
+import js_img from '../img/portImages/js_img.png'
+import mongodb_img from '../img/portImages/mongodb_img.png'
+import nodejs_img from '../img/portImages/nodejs_img.png'
+import postman_img from '../img/portImages/postman_img.png'
+import tailwind_img from '../img/portImages/tailwind_img.png'
+import redux_img from '../img/portImages/redux_img.png'
+import react_img from '../img/portImages/react_img.png'
+
+
+
 
 function Skills() {
     return (
@@ -10,42 +22,20 @@ function Skills() {
             
                 <Title title={'My Skills'} span={'my skills'} />
                 <InnerLayout>
-                    <div className="skills">
-                        <ProgressBar 
-                            title={'HTML5'}
-                            width={'70%'}
-                            text={'70%'}
-                        />
-                        <ProgressBar 
-                            title={'CSS3'}
-                            width={'90%'}
-                            text={'90%'}
-                        />
-                        <ProgressBar 
-                            title={'JAVASCRIPT'}
-                            width={'85%'}
-                            text={'85%'}
-                        />
-                        <ProgressBar 
-                            title={'NODE JS'}
-                            width={'60%'}
-                            text={'62%'}
-                        />
-                        <ProgressBar 
-                            title={'PYTHON'}
-                            width={'95%'}
-                            text={'60%'}
-                        />
-                        <ProgressBar 
-                            title={'React JS'}
-                            width={'75%'}
-                            text={'75%'}
-                        />
-                        <ProgressBar 
-                            title={'MONGO DB'}
-                            width={'75%'}
-                            text={'75%'}
-                        />
+                    <div>
+                        <img src={html_img} className='img'/>
+                        <img src={css_img} className='img'/>
+                        <img src={js_img} className='img'/>
+                    </div>
+                    <div>
+                        <img src={mongodb_img} className='img'/> 
+                        <img src={nodejs_img} className='img'/>
+                        <img src={postman_img} className='img'/>  
+                    </div>
+                    <div>
+                        <img src={tailwind_img} className='img'/> 
+                        <img src={redux_img} className='img'/>
+                        <img src={react_img} className='img'/>  
                     </div>
                 </InnerLayout>
         </SkillsStyled>
@@ -61,6 +51,11 @@ const SkillsStyled = styled.section`
         @media screen and (max-width: 700px){
             grid-template-columns: repeat(1, 1fr);
         }
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+        margin: 30px;
     }
 `;
 
