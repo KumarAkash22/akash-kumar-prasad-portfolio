@@ -2,17 +2,15 @@ import React from 'react'
 import styled from 'styled-components';
 import {InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-// import ProgressBar from './ProgressBar';
-import html_img from '../img/portImages/html_img.png'
-import css_img from '../img/portImages/css_img.jpg'
-import js_img from '../img/portImages/js_img.png'
-import mongodb_img from '../img/portImages/mongodb_img.png'
-import nodejs_img from '../img/portImages/nodejs_img.png'
-import postman_img from '../img/portImages/postman_img.png'
-import tailwind_img from '../img/portImages/tailwind_img.png'
-import redux_img from '../img/portImages/redux_img.png'
-import react_img from '../img/portImages/react_img.png'
-
+import {AiFillHtml5} from 'react-icons/ai'
+import {FaReact} from 'react-icons/fa'
+import {FaCss3Alt} from 'react-icons/fa'
+import {SiJavascript} from 'react-icons/si'
+import {SiMongodb} from 'react-icons/si'
+import {FaNodeJs} from 'react-icons/fa'
+import {SiPostman} from 'react-icons/si'
+import {SiTailwindcss} from 'react-icons/si'
+import {SiRedux} from 'react-icons/si'
 
 
 
@@ -22,20 +20,43 @@ function Skills() {
             
                 <Title title={'My Skills'} span={'my skills'} />
                 <InnerLayout>
-                    <div>
-                        <img src={html_img} className='img'/>
-                        <img src={css_img} className='img'/>
-                        <img src={js_img} className='img'/>
-                    </div>
-                    <div>
-                        <img src={mongodb_img} className='img'/> 
-                        <img src={nodejs_img} className='img'/>
-                        <img src={postman_img} className='img'/>  
-                    </div>
-                    <div>
-                        <img src={tailwind_img} className='img'/> 
-                        <img src={redux_img} className='img'/>
-                        <img src={react_img} className='img'/>  
+                    <div className='container' >
+                        <div >
+                        <AiFillHtml5 className='techstackicon'/>
+                         <p className='text'>HTML</p>
+                        </div>
+                        <div >
+                        <FaCss3Alt className='techstackicon'/>
+                        <p className='text'>CSS</p>
+                        </div>
+                        <div >
+                        <SiJavascript className='techstackicon'/>
+                        <p className='text'>JavaScript</p>
+                        </div>
+                        <div >
+                        <SiMongodb className='techstackicon'/>
+                        <p className='text'>MongoDb</p>
+                        </div> 
+                        <div >
+                        <FaNodeJs className='techstackicon'/>
+                        <p className='text'>Node JS</p>
+                        </div>
+                        <div >
+                        <SiPostman className='techstackicon'/>  
+                        <p className='text'>Postman</p>
+                        </div>
+                        <div >
+                        <SiTailwindcss className='techstackicon'/> 
+                        <p className='text'>Tailwind</p>
+                        </div>
+                        <div >
+                        <SiRedux className='techstackicon'/>
+                        <p className='text'>Redux</p>
+                        </div>
+                        <div >
+                        <FaReact className='techstackicon'/>
+                        <p className='text'>React</p>
+                        </div>  
                     </div>
                 </InnerLayout>
         </SkillsStyled>
@@ -55,7 +76,36 @@ const SkillsStyled = styled.section`
     .img{
         width: 200px;
         height: 200px;
-        margin: 30px;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 15px;
+        &:hover{
+                    border: 2px solid #5F4687;
+                    color: #5F4687;
+                }
+    }
+    .techstackicon{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        padding: 30px;
+        border-radius: 15px;
+        border: 3px solid red;
+        &:hover{
+                    border: 2px solid #5F4687;
+                    color: #5F4687;
+                }
+    }
+    .text{
+        font-size:'30px';
+        /* border: solid 3px purple; */
+        color: goldenrod;
+        margin-left: 20%;
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 `;
 

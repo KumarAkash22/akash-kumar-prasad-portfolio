@@ -1,34 +1,34 @@
 import React from 'react'
 import styled from 'styled-components';
-import ak from '../img/ak.jpeg';
+// import ak from '../img/ak.jpeg';
 import PrimaryButton from './PrimaryButton';
 import Typical from 'react-typical';
 
 function ImageSection() {
     return (
         <ImageSectionStyled>
-            <div className="left-content">
+            {/* <div className="left-content">
                 <img src={ak} alt=""/>
-            </div>
+            </div> */}
             <div className="right-content">
-                <h4>I am <span><Typical
+                {/* <h4>I am <span><Typical
                     loop={Infinity}
                     wrapper="span"
                     steps={[
                         " Akash Kumar Prasad", 
-                        1000,
-                        "web Developer",
-                        1000,
+                        800,
+                        "Web Developer",
+                        800,
                     ]}
-                    /></span></h4>
+                    /></span></h4> */}
                 <p className="paragraph">
-                Versatile Full Stack Web Developer possessing comprehensiveknowledge in JavaScript
-                 algorithms, having basic skills of JavaScript, HTML,CSS with the ability of quickly 
-                 adaptation tonew software packages and programming. Looking forward toupgrading my 
+                Versatile Full Stack Web Developer possessing comprehensive knowledge in JavaScript
+                 algorithms, having basic skills of JavaScript, HTML, CSS with the ability of quickly 
+                 adaptation to new software packages and programming. Looking forward toupgrading my 
                  skills in a challenging work environment.
                     
                 </p>
-                <div className="about-info">
+                {/* <div className="about-info">
                     <div className="info-title">
                         <p>Full Name</p>
                         <p>Qualification</p>
@@ -46,7 +46,7 @@ function ImageSection() {
                         <p>: English, Hindi</p>
                         <p>: Ajmer, Rajasthan</p>   
                     </div>
-                </div>
+                </div> */}<br/><br/>
                 <a href={`resumecv.pdf`}download="Akash Kumar Prasad Resume.pdf" >
                 <PrimaryButton title={'Download Cv'} /></a>
             </div>
@@ -72,7 +72,8 @@ const ImageSectionStyled = styled.div`
         }
     }
     .right-content{
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
         h4{
             font-size: 2rem;
             color: var(--white-color);
@@ -82,6 +83,8 @@ const ImageSectionStyled = styled.div`
         }
         .paragraph{
             padding: 1rem 0;
+            width: 100%;
+            font-size: 150%;
         }
         .about-info{
             display: flex;

@@ -10,7 +10,9 @@ function AboutPage() {
     return (
         <MainLayout>
             <AboutStyled >
-                <Title title={'About Me'} span={'About Me'} />
+                <div className='about'>
+                <Title
+                 title={'About Me'} span={'About Me'}/></div>
                 <ImageSection />
                 {/* <ServicesSection /> */}
                 {/* <ReviewsSection /> */}
@@ -20,7 +22,9 @@ function AboutPage() {
 }
 
 const AboutStyled = styled.section`
-    
+   .about{
+       margin-left: 12%;
+   } 
 `;
 
 export default AboutPage

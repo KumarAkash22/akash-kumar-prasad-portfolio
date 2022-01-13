@@ -23,13 +23,12 @@ function HomePage() {
                     steps={[
                         " Akash Kumar Prasad", 
                         1000,
-                        "web Developer",
+                        " Web Developer",
                         1000,
                     ]}
                     />
                     </span>
-</h1>
-                
+                </h1><br/>
                 <h4>
                     A Versatile Full Stack Web Developer.
                 </h4>
