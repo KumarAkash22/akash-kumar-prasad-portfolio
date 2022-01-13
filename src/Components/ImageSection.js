@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 // import ak from '../img/ak.jpeg';
 import PrimaryButton from './PrimaryButton';
-import Typical from 'react-typical';
+// import Typical from 'react-typical';
 
 function ImageSection() {
     return (

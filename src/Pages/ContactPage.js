@@ -2,28 +2,32 @@ import React from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import PrimaryButton from '../Components/PrimaryButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
+import {useRef} from 'react'
+import PrimaryButton from '../Components/PrimaryButton';
 
-function ContactPage() {
+ function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
 
 
-    function sendEmail(e) {
-        e.preventDefault();
-        emailjs.sendForm('gmail', 'service_1kofin8', e.target, 'user_livcjgdTbJa4Qg05qdsDz')
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_1kofin8', 'Akash_email_template', form.current, 'user_livcjgdTbJa4Qg05qdsDz')
         .then((result) => {
         console.log(result.text);
         }, (error) => {
         console.log(error.text);
         });
-        e.target.reset()
+        
         }
 
     return (
@@ -35,7 +39,7 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  className="form" onSubmit={sendEmail}>
+                    <form ref={form} className="form" onSubmit={sendEmail}>
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
                             <input type="text" id="name"  name='name'/>
@@ -50,18 +54,18 @@ function ContactPage() {
                         </div>
                         <div className="form-field">
                             <label htmlFor="text-area">Enter your Message*</label>
-                            <input name="message" id="textarea" cols="30" rows="10"></input>
+                            <textarea name="message" id="textarea" cols="30" rows="7"></textarea>
                         </div>
-                        <div className="form-field f-button" type="submit" value="Send">
-                            <PrimaryButton title={'Send Email'} />
+                        <div className="f-button " type="submit" value="Send">
+                            {/* <PrimaryButton title={'Send Email'} > */}
+                            <input type="submit" value="SEND EMAIL" className='sendemail'/> 
                         </div>
                     </form>
                 </div>
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'8107715717'} />
                     <ContactItem title={'Email'} icon={email} cont1={'akash22gupta33@gmail.com'} />
-                    <ContactItem title={'Location'} icon={location} cont1={'Rajasthan, India'}/>
-                    
+                    <ContactItem title={'Location'} icon={location} cont1={'Rajasthan, India'}/> 
                 </div>
             </InnerLayout>
             </ContactPageStyled>
@@ -78,8 +82,11 @@ const ContactPageStyled = styled.section`
             grid-template-columns: repeat(1, 1fr);
             .f-button{
                 margin-bottom: 3rem;
+                width: 33%;
+                
             }
         }
+          
         .right-content{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -97,12 +104,12 @@ const ContactPageStyled = styled.section`
         .form{
             width: 100%;
             @media screen and (max-width: 502px){
-                width: 100%;
+                /* width: 100%; */
             }
             .form-field{
                 margin-top: 2rem;
                 position: relative;
-                width: 100%;
+                /* width: 100%; */
                 label{
                     position: absolute;
                     left: 20px;
@@ -134,6 +141,33 @@ const ContactPageStyled = styled.section`
             
         }
     }
+    .sendemail{
+    margin:20px ;
+    background-color: var(--primary-color);
+    padding: .8rem 2.5rem;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .4s ease-in-out;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: .2rem;
+        transition: all .4s ease-in-out;
+        left: 0;
+        bottom: 0;
+        opacity: .7;
+    }
+    &:hover::after{
+        width: 100%;
+        background-color: var(--white-color);
+    }
+}
+    
 `;
 
 export default ContactPage
