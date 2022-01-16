@@ -2,6 +2,8 @@ import Udemy_1 from '../img/portImages/Udemy_1.png';
 import Udemy_2 from '../img/portImages/udemy_2.png';
 import udemy_3 from '../img/portImages/udemy_3.png';
 import saphora from '../img/portImages/saphora.png';
+import GitHub from '@material-ui/icons/GitHub';
+
 
 
 const portfolios = [
@@ -12,7 +14,8 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/Udemy-Clone-Backend',
         link2: 'https://aqueous-fortress-78543.herokuapp.com/',
         title: 'Udemy Website 3.0',
-        text: 'Create with Frontend Backend'
+        text: 'All round Backend integrated clone mimicing the user flow and behavior of Udemy.com',
+        button: <GitHub/>
     },
     {
         id: 1,

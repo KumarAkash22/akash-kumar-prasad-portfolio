@@ -2,10 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
 import Particle from '../Components/Particle';
 import Typical from 'react-typical';
-
+import {AiFillTwitterCircle} from 'react-icons/ai'
 function HomePage() {
 
 
@@ -39,8 +38,8 @@ function HomePage() {
                     <a href="https://github.com/KumarAkash22" className="icon i-github">
                         <GithubIcon />
                     </a>
-                    <a href="https://codepen.io/pen/" className="icon i-youtube">
-                        <YoutubeIcon />
+                    <a href="https://twitter.com/Akashku16402182" className="icon i-youtube width">
+                        <AiFillTwitterCircle />
                     </a>
                 </div>
             </div>
@@ -89,10 +88,13 @@ const HomePageStyled = styled.header`
                 }
             }
 
+            .width{
+                width: 48px;
+            }
             .i-youtube{
                 &:hover{
-                    border: 2px solid red;
-                    color: red;
+                    border: 2px solid #057fff;
+                    color: #057fff;
                 }
             }
             .i-github{

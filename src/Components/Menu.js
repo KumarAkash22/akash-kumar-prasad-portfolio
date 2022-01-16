@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
 import Pinterest from '@material-ui/icons/Pinterest';
-
+import {IoOpenOutline as IoOpenOutline } from 'react-icons/io5'
 function Menu({menuItem}) {
     return (
         <MenuItemStyled >
@@ -20,13 +20,23 @@ function Menu({menuItem}) {
                                     </li>
                                     <li>
                                         <a href={item.link2}>
-                                            <Pinterest />
+                                            <IoOpenOutline />
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <h6>{item.title}</h6>
                             <p>{item.text}</p>
+                            <div className='button'>
+                                <div >
+                                <a href={item.link1}><GitHub className='size'/>
+                                </a></div>
+                                <div>
+                                <a href={item.link2}>
+                                <IoOpenOutline className='size' />
+                                </a></div>
+                                
+                            </div>
                         </div>
                     </div>
                 })
@@ -99,6 +109,28 @@ const MenuItemStyled = styled.div`
                     transition: all .4s ease-in-out;
                 }
             }
+            .button{
+                    display:flex;
+                    padding-left: 1rem;
+                    font-size: 30px   ;
+                    
+            }
+            .button > div {
+                /* border: 2px solid #057fff; */
+                border-radius: 15px;
+                width: 60px;
+                margin-left    : 70px;
+                margin-top: 10px;
+                    &:hover{
+                    border: 2px solid #057fff;
+                    color: #057fff;
+                }
+            }
+            .size{
+                height: 50px;
+                width: 50px;
+                
+            }
             .portfolio-image:hover{
                 ul{
                     transform: translateY(0);
@@ -124,6 +156,7 @@ const MenuItemStyled = styled.div`
                     li:hover{
                         svg{
                             color: var(--white-color);
+                            height: 130px;
                         }
                     }
                     svg{
@@ -131,7 +164,7 @@ const MenuItemStyled = styled.div`
                     }
                 }
                 &::before{
-                    height: calc(100% - 32%) ;
+                    height: calc(100% - 48%) ;
                     width: calc(100% - 4%);
                     background-color: white;
                     opacity: 0.9;

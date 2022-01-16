@@ -80,8 +80,8 @@ const SkillsStyled = styled.section`
         padding: 30px;
         border-radius: 15px;
         &:hover{
-                    border: 2px solid #5F4687;
-                    color: #5F4687;
+                    border: 2px solid #057fff;
+                    color: #057fff;
                 }
     }
     .techstackicon{
@@ -90,16 +90,16 @@ const SkillsStyled = styled.section`
         margin-top: 20px;
         padding: 30px;
         border-radius: 15px;
-        border: 3px solid red;
+        /* border: 3px solid red; */
         &:hover{
-                    border: 2px solid #5F4687;
-                    color: #5F4687;
+                    border: 2px solid #057fff;
+                    color: #057fff;
                 }
     }
     .text{
         font-size:'30px';
         /* border: solid 3px purple; */
-        color: goldenrod;
+        /* color: goldenrod; */
         margin-left: 20%;
         
     }

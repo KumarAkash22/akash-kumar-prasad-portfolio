@@ -8,7 +8,6 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
 import emailjs from '@emailjs/browser';
 import {useRef} from 'react'
-import PrimaryButton from '../Components/PrimaryButton';
 
  function ContactPage() {
     const phone = <PhoneIcon />
