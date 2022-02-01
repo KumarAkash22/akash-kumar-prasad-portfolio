@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
-import Pinterest from '@material-ui/icons/Pinterest';
-import {IoOpenOutline as IoOpenOutline } from 'react-icons/io5'
+import {IoOpenOutline  } from 'react-icons/io5'
 function Menu({menuItem}) {
     return (
         <MenuItemStyled >
@@ -14,25 +13,30 @@ function Menu({menuItem}) {
                                 <img src={item.image} alt=""/>
                                 <ul>
                                     <li>
-                                        <a href={item.link1}>
+                                        <a href={item.link1}  target="_blank"
+                                         rel="noreferrer"> 
                                             <GitHub />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={item.link2}>
+                                        <a href={item.link2} target="_blank"
+                                           rel="noreferrer">
                                             <IoOpenOutline />
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <h6>{item.title}</h6>
-                            <p>{item.text}</p>
+                            <p>{item.text}</p><br/>
+                            <p className='tech'>{item.tech}</p>
                             <div className='button'>
                                 <div >
-                                <a href={item.link1}><GitHub className='size'/>
+                                <a href={item.link1} target="_blank"
+                                           rel="noreferrer"><GitHub className='size'/>
                                 </a></div>
                                 <div>
-                                <a href={item.link2}>
+                                <a href={item.link2} target="_blank"
+                                           rel="noreferrer">
                                 <IoOpenOutline className='size' />
                                 </a></div>
                                 
@@ -97,7 +101,11 @@ const MenuItemStyled = styled.div`
                         }
                     }
             }
-
+            .tech{
+                /* border: 1px solid red; */
+                text-align: center;
+                color: #ffffff;
+            }
             .portfolio-image{
                 &::before{
                     content: "";

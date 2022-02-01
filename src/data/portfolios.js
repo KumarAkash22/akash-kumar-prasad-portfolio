@@ -14,6 +14,7 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/Udemy-Clone-Backend',
         link2: 'https://aqueous-fortress-78543.herokuapp.com/',
         title: 'Udemy Website 3.0',
+        tech : 'HTML| NodeJs| MongoDb| EJS',
         text: 'All round Backend integrated clone mimicing the user flow and behavior of Udemy.com',
         button: <GitHub/>
     },
@@ -24,6 +25,7 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/udemy-clone-1',
         link2: 'https://aqueous-fortress-78543.herokuapp.com/',
         title: 'Udemy 2.0',
+        tech : 'HTML| Tailwind| JavaScript| Mock Server| Express',
         text: 'Create with HTML Tailwind and Mock Server'
     },
     {
@@ -33,6 +35,7 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/Udemy-Clone',
         link2: 'https://kapoorkartik.github.io/Udemy-Clone/home_page.html',
         title: 'Udemy website 1.0',
+        tech : 'HTML| CSS| ES6',
         text: 'Create with HTML CSS and Advance JavaScript'
     },
     
@@ -43,6 +46,7 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/Sephora-clone',
         link2: 'https://kumarakash22.github.io/Sephora-clone/slide.html',
         title: 'Sephora website',
+        tech : 'HTML| CSS| ES6',
         text: 'Create with HTML and CSS and Basic JavaScript'
     }
     // {

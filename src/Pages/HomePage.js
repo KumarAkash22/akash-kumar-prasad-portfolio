@@ -32,13 +32,16 @@ function HomePage() {
                     A Versatile Full Stack Web Developer.
                 </h4>
                 <div className="icons">
-                    <a href="https://www.linkedin.com/in/akash-kumar-prasad-781812190" className="icon i-facebook">
+                    <a href="https://www.linkedin.com/in/akash-kumar-prasad-781812190" target="_blank" 
+                    rel="noreferrer"  className="icon i-facebook">
                         <LinkedInIcon />
                     </a>
-                    <a href="https://github.com/KumarAkash22" className="icon i-github">
+                    <a href="https://github.com/KumarAkash22" target="_blank"
+                    rel="noreferrer" className="icon i-github">
                         <GithubIcon />
                     </a>
-                    <a href="https://twitter.com/Akashku16402182" className="icon i-youtube width">
+                    <a href="https://twitter.com/Akashku16402182" target="_blank"
+                    rel="noreferrer" className="icon i-youtube width">
                         <AiFillTwitterCircle />
                     </a>
                 </div>
