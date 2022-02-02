@@ -42,7 +42,7 @@ function HomePage() {
                     </a>
                     <a href="https://twitter.com/Akashku16402182" target="_blank"
                     rel="noreferrer" className="icon i-youtube width">
-                        <AiFillTwitterCircle />
+                        < AiFillTwitterCircle style={{width:"20px ",height:"20px "}}/>
                     </a>
                 </div>
             </div>

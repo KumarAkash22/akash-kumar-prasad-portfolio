@@ -14,8 +14,8 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/Udemy-Clone-Backend',
         link2: 'https://aqueous-fortress-78543.herokuapp.com/',
         title: 'Udemy Website 3.0',
-        tech : 'HTML| NodeJs| MongoDb| EJS',
-        text: 'All round Backend integrated clone mimicing the user flow and behavior of Udemy.com',
+        tech : 'HTML| NodeJs| MongoDb| EJS| Tailwind',
+        text: 'All round Backend integrated clone mimicing the user flow and behavior of Udemy.com. In this we were using MongoDb for storing all data.',
         button: <GitHub/>
     },
     {
@@ -26,7 +26,7 @@ const portfolios = [
         link2: 'https://aqueous-fortress-78543.herokuapp.com/',
         title: 'Udemy 2.0',
         tech : 'HTML| Tailwind| JavaScript| Mock Server| Express',
-        text: 'Create with HTML Tailwind and Mock Server'
+        text: 'Udemy is an E-learning web application for online learning and teaching.In this we were useing Mock-server for store data '
     },
     {
         id: 6,
@@ -35,8 +35,8 @@ const portfolios = [
         link1: 'https://github.com/KumarAkash22/Udemy-Clone',
         link2: 'https://kapoorkartik.github.io/Udemy-Clone/home_page.html',
         title: 'Udemy website 1.0',
-        tech : 'HTML| CSS| ES6',
-        text: 'Create with HTML CSS and Advance JavaScript'
+        tech : 'HTML| CSS| DOM| JavaScript',
+        text: 'This is our first colaborative project. In this project we clone udemy.com. Here we first identify the main functionalities and then implemented all identified functions'
     },
     
     {
@@ -44,39 +44,11 @@ const portfolios = [
         category: 'Sephora',
         image: saphora,
         link1: 'https://github.com/KumarAkash22/Sephora-clone',
-        link2: 'https://kumarakash22.github.io/Sephora-clone/slide.html',
+        link2: 'https://sephoraclone-akash.vercel.app/',
         title: 'Sephora website',
-        tech : 'HTML| CSS| ES6',
-        text: 'Create with HTML and CSS and Basic JavaScript'
+        tech : 'HTML| CSS| Javascript',
+        text: 'This is individual Project which is clone of Saphora website. SignUp /Login and Add to Cart data are store in localStorage and also fatch fron there. All design are made by CSS. '
     }
-    // {
-    //     id: 4,
-    //     category: 'Animation',
-    //     image: img2,
-    //     link1: 'https://www.google.com',
-    //     link2: 'https://www.google.com',
-    //     title: 'How To Use Blender',
-    //     text: 'Free Animation Software'
-    // },
-    // {
-    //     id: 5,
-    //     category: 'Animation',
-    //     image: img2,
-    //     link1: 'https://www.google.com',
-    //     link2: 'https://www.google.com',
-    //     title: 'How To Use Blender',
-    //     text: 'Free Animation Software'
-    // },
-    
-    // {
-    //     id: 7,
-    //     category: 'Udemy 2.',
-    //     image: Udemy_2,
-    //     link1: 'https://github.com/KumarAkash22/udemy-clone-1',
-    //     link2: 'https://aqueous-fortress-78543.herokuapp.com/',
-    //     title: 'Udemy 2.0',
-    //     text: 'Create with HTML Tailwind and Mock Server'
-    // }
 ]
 
 export default portfolios;

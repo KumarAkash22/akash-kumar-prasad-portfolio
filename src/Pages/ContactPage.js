@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GithubIcon from '@material-ui/icons/GitHub';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -13,7 +15,8 @@ import {useRef} from 'react'
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
-
+    const Linked = <LinkedInIcon />
+    const github = <GithubIcon />
 
     const form = useRef();
 
@@ -66,9 +69,15 @@ import {useRef} from 'react'
                     <ContactItem title={'Email'} icon={email} cont1={'akash22gupta33@gmail.com'} />
                     <ContactItem title={'Location'} icon={location} cont1={'Rajasthan, India'}/> 
                 </div>
+                
             </InnerLayout>
             </ContactPageStyled>
+            <div className='bottom'>
+        <ContactItem title={'Linkedin'} icon={Linked} cont1={<a href="https://www.linkedin.com/in/akash-kumar-prasad-781812190" rel="noreferrer" target="_blank">Connent on Linkedin</a>} />
+        <ContactItem title={'Github'} icon={github} cont1={<a href="https://github.com/KumarAkash22" rel="noreferrer" target="_blank">Connent on GitHub</a>} />
+        </div>
         </MainLayout>
+        
     )
 }
 
@@ -136,9 +145,8 @@ const ContactPageStyled = styled.section`
                     padding: .8rem 1rem;
                 }
             }
-
-            
         }
+        
     }
     .sendemail{
     margin:20px ;
@@ -165,8 +173,15 @@ const ContactPageStyled = styled.section`
         width: 100%;
         background-color: var(--white-color);
     }
-}
     
+}
+.bottom{
+      border: red solid 1px;
+    
+        
+        /* grid-template-columns: auto auto; */
+        /* width: 100%; */
+    }  
 `;
 
 export default ContactPage

@@ -64,13 +64,13 @@ function Skills() {
 }
 
 const SkillsStyled = styled.section`
-    .skills{
+    .container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 2rem;
         grid-column-gap: 3rem;
         @media screen and (max-width: 700px){
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
     .img{
@@ -80,7 +80,7 @@ const SkillsStyled = styled.section`
         padding: 30px;
         border-radius: 15px;
         &:hover{
-                    border: 2px solid #057fff;
+                    /* border: 2px solid #057fff; */
                     color: #057fff;
                 }
     }
@@ -92,9 +92,13 @@ const SkillsStyled = styled.section`
         border-radius: 15px;
         /* border: 3px solid red; */
         &:hover{
-                    border: 2px solid #057fff;
+                    /* border: 2px solid #057fff; */
                     color: #057fff;
                 }
+        @media screen and (max-width: 700px){
+            width: 120px;
+            height: 120px;
+        }        
     }
     .text{
         font-size:'30px';
@@ -103,10 +107,10 @@ const SkillsStyled = styled.section`
         margin-left: 20%;
         
     }
-    .container{
+    /* .container{
         display: grid;
-        grid-template-columns: auto auto auto;
-    }
+        grid-template-columns: auto auto;
+    } */
 `;
 
 export default Skills;

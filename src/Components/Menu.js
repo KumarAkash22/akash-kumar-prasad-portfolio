@@ -130,7 +130,7 @@ const MenuItemStyled = styled.div`
                 margin-left    : 70px;
                 margin-top: 10px;
                     &:hover{
-                    border: 2px solid #057fff;
+                    /* border: 2px solid #057fff; */
                     color: #057fff;
                 }
             }
@@ -139,7 +139,7 @@ const MenuItemStyled = styled.div`
                 width: 50px;
                 
             }
-            .portfolio-image:hover{
+            /* .portfolio-image:hover{
                 ul{
                     transform: translateY(0);
                     transform: translate(-50%, -50%);
@@ -172,7 +172,7 @@ const MenuItemStyled = styled.div`
                     }
                 }
                 &::before{
-                    height: calc(100% - 48%) ;
+                    height: calc(100% - 60%) ;
                     width: calc(100% - 4%);
                     background-color: white;
                     opacity: 0.9;
@@ -180,9 +180,9 @@ const MenuItemStyled = styled.div`
                     
                     transition: all .4s ease-in-out;
                 }
-            }
+            }*/
         }
-    }
+    } 
 `;
 
 export default Menu;
