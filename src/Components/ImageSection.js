@@ -47,7 +47,7 @@ function ImageSection() {
                         <p>: Ajmer, Rajasthan</p>   
                     </div>
                 </div> */}<br/><br/>
-                <a href={`Akash_Kumar_Prasad.pdf`}download="Akash Kumar Prasad Resume.pdf" >
+                <a href={`Akash_Kumar_Prasad.pdf`}download="Akash_Kumar_Prasad.pdf" >
                 <PrimaryButton title={'Download Cv'} /></a>
             </div>
         </ImageSectionStyled>
